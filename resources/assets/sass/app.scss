@@ -8,7 +8,156 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
+}
+
+body {
+  font-size  : 16px;
+  line-height: 1.5;
+  color      : rgb(52, 58, 64);
+}
+
+ul {
+  list-style    : none;
+  display       : flex;
+  flex-direction: row;
+  margin        : 0;
+}
+
+li {}
+
+a {
+  color  : rgb(52, 58, 64);
+  padding: 8px;
+
+  &:hover {
+    color          : rgb(0, 123, 255);
+    text-decoration: none;
+  }
+}
+
+nav {}
+
+.start {
+  background-color: rgb(59, 89, 152);
+  position        : fixed;
+  display         : flex;
+  width           : 100%;
+  height          : 100%;
+  flex-direction  : row;
+  justify-content : center;
+  align-items     : center;
+
+  .start__box {
+    color          : rgb(255,255,255);
+    padding        : 0 15px;
+    opacity        : 1;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+    width          : 39%;
+    position       : relative;
+
+    .start__box-headline {
+      font-size: 3.125rem;
+    }
+
+    .start__box-subheadline {
+      font-size  : 1.5rem;
+      font-weight: 300;
+    }
+
+    .start__box-btn {
+      width      : 100%;
+      padding-top: 50px;
+      display    : flex;
+
+      .start__box-btn--transparent {
+
+        padding            : 10px 20px;
+        border             : 2px solid rgb(255, 255, 255);
+        color              : rgb(255, 255, 255);
+        text-align         : center;
+        outline            : 0;
+        text-transform     : uppercase;
+        font-size          : .875rem;
+        letter-spacing     : 4px;
+        background         : 0 0;
+        background         : linear-gradient(to right, #fff 51%, transparent 50%);
+        background-size    : 205% 100%;
+        background-position: right bottom;
+        transition         : all 1s ease;
+        text-decoration    : none;
+
+        &:hover {
+          background-position: left bottom;
+          color              : rgb(59, 89, 152);
+        }
+      }
+    }
+
+    a {
+      color: rgb(59, 89, 152);
+    }
+  }
+  @media (max-width: 480px) {
+    .welcomeBox {
+      width: 100%;
+    }
+  }
+}
+
 .navbar-laravel {
   background-color: #fff;
   box-shadow      : 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+header {
+  justify-content: space-between;
+  border-bottom  : 2px solid #f6f6f6;
+  background     : rgb(255,255,255);
+  padding        : 15px 0;
+  transition     : padding .3s;
+}
+
+.header__container {
+  flex-wrap      : wrap;
+  display        : flex;
+  justify-content: space-between;
+  flex-direction : row;
+  align-items    : center;
+}
+
+.header__brand {
+  display       : flex;
+  flex-direction: column;
+  font-size     : 1.6875rem;
+  color         : rgb(0, 123, 255);
+
+  .header__title {
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .header__subtitle {
+    font-size: 1rem;
+    color    : rgb(52, 58, 64);
+  }
+}
+
+nav {
+  display        : flex;
+  justify-content: flex-end;
+
+  .nav__link-active {
+    a {
+      color: rgb(0, 123, 255);
+    }
+  }
 }

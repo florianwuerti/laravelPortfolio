@@ -10411,9 +10411,202 @@ a.text-dark:focus {
   }
 }
 
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #343a40;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+}
+
+a {
+  color: #343a40;
+  padding: 8px;
+}
+
+a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.start {
+  background-color: #3b5998;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.start .start__box {
+  color: white;
+  padding: 0 15px;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 39%;
+  position: relative;
+}
+
+.start .start__box .start__box-headline {
+  font-size: 3.125rem;
+}
+
+.start .start__box .start__box-subheadline {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.start .start__box .start__box-btn {
+  width: 100%;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.start .start__box .start__box-btn .start__box-btn--transparent {
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  outline: 0;
+  text-transform: uppercase;
+  font-size: .875rem;
+  letter-spacing: 4px;
+  background: 0 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(51%, #fff), color-stop(50%, transparent));
+  background: linear-gradient(to right, #fff 51%, transparent 50%);
+  background-size: 205% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  text-decoration: none;
+}
+
+.start .start__box .start__box-btn .start__box-btn--transparent:hover {
+  background-position: left bottom;
+  color: #3b5998;
+}
+
+.start .start__box a {
+  color: #3b5998;
+}
+
+@media (max-width: 480px) {
+  .start .welcomeBox {
+    width: 100%;
+  }
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #f6f6f6;
+  background: white;
+  padding: 15px 0;
+  -webkit-transition: padding .3s;
+  transition: padding .3s;
+}
+
+.header__container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6875rem;
+  color: #007bff;
+}
+
+.header__brand .header__title {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.header__brand .header__subtitle {
+  font-size: 1rem;
+  color: #343a40;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .nav__link-active a {
+  color: #007bff;
 }
 
