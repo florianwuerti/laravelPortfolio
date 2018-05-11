@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <title>{{ config('app.name', 'Laravel') }}</title>
+      <title>{{ config('app.name', 'Laravel') }} - Application Developer</title>
 
       <!-- Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -13,22 +13,34 @@
       <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
-      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-        <h5 class="my-0 mr-md-auto font-weight-normal">{{ config('app.name', 'Laravel') }}</h5>
-        <nav class="my-2 my-md-0 mr-md-3">
-          <a class="p-2 text-dark" href="#">Home</a>
-          <a class="p-2 text-dark" href="#">About</a>
-          <a class="p-2 text-dark" href="#">Project</a>
-          <a class="p-2 text-dark" href="#">Contact</a>
-        </nav>
-        @if (Route::has('login'))
-          @auth
-              <a href="{{ url('/home') }}">Home</a>
-          @else
-            <a class="btn btn-outline-primary mr-md-3" href="{{ route('login') }}">Sign up</a>
-            <a class="btn btn-outline-primary" href="{{ route('register') }}">Register</a>
-          @endauth
-        @endif
-      </div>
+      <header class="header">
+        <div class="header__container container">
+          <a class="header__brand" href="{{ url('/') }}">
+            <span class="header__title">{{ config('app.name', 'Laravel') }}</span>
+            <span class="header__subtitle">Application Developer</span>
+          </a>
+          <nav class="nav navbar__primary">
+            <ul class="nav__list">
+              <li class="nav__item {{ Request::is('project') ? "nav__link-active" : "" }}">
+                <a class="nav__link" href="{{ url('project') }}">Project</a>
+              </li>
+              <li class="nav__item {{ Request::is('about-us') ? "nav__link-active" : "" }}">
+                <a class="nav__link" href="{{ url('about-us') }}">About</a>
+              </li>
+              <li class="nav__item {{ Request::is('contact') ? "nav__link-active" : "" }}">
+                <a class="nav__link" href="{{ url('contact') }}">Contact</a>
+              </li>
+              @if (Route::has('login'))
+                @auth
+                  <li class="nav__item {{ Request::is('dashboard') ? "nav__link-active" : "" }}">
+                    <a class="nav__link" href="{{ url('dashboard') }}">Dashboard</a>
+                  </li>
+                @endauth
+              @endif
+            </ul>
+          </nav>
+        </div>
+      </header>
+        @yield('content')
     </body>
 </html>
