@@ -47381,7 +47381,7 @@ if (false) {
 /* 43 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \n@import '~bootstrap/scss/bootstrap';\n                                   ^\n      Invalid CSS after \"...css/bootstrap';\": expected 1 selector or at-rule, was \"<<<<<<< HEAD\"\n      in /Users/flo/Documents/Development/www/web/flo/portfolio/resources/assets/sass/app.scss (line 5, column 37)\n    at runLoaders (/Users/flo/Documents/Development/www/web/flo/portfolio/node_modules/webpack/lib/NormalModule.js:195:19)\n    at /Users/flo/Documents/Development/www/web/flo/portfolio/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/flo/Documents/Development/www/web/flo/portfolio/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/flo/Documents/Development/www/web/flo/portfolio/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (/Users/flo/Documents/Development/www/web/flo/portfolio/node_modules/sass-loader/lib/loader.js:55:13)\n    at Object.done [as callback] (/Users/flo/Documents/Development/www/web/flo/portfolio/node_modules/neo-async/async.js:7974:18)\n    at options.error (/Users/flo/Documents/Development/www/web/flo/portfolio/node_modules/node-sass/lib/index.js:294:32)");
 
 /***/ })
 /******/ ]);

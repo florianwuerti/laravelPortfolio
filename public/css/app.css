@@ -10411,6 +10411,7 @@ a.text-dark:focus {
   }
 }
 
+<<<<<<< HEAD
 .footer {
   width: 100%;
   height: 60px;
@@ -10679,5 +10680,13 @@ a:hover {
   .start .welcomeBox {
     width: 100%;
   }
+}
+
+=======
+>>>>>>> parent of a67d491... 2. Push - styling frondend (start and Navigation)
+.navbar-laravel {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 

@@ -4,6 +4,7 @@
 @import "common/_variables";
 @import '~bootstrap/scss/bootstrap';
 
+<<<<<<< HEAD
 @import "components/blog/_blog";
 @import "components/elements/_elements";
 @import "components/footer/_footer";
@@ -120,4 +121,11 @@ nav {}
       width: 100%;
     }
   }
+}
+
+=======
+>>>>>>> parent of a67d491... 2. Push - styling frondend (start and Navigation)
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow      : 0 2px 4px rgba(0, 0, 0, 0.04);
 }
