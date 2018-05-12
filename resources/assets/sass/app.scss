@@ -1,12 +1,20 @@
-
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
-// Variables
-@import "variables";
-
-// Bootstrap
+@import "common/_variables";
 @import '~bootstrap/scss/bootstrap';
+
+@import "components/blog/_blog";
+@import "components/elements/_elements";
+@import "components/footer/_footer";
+@import "components/forms/_forms";
+@import "components/header/_header";
+@import "components/layout/_layout";
+@import "components/media/_media";
+@import "components/navigation/_navigation";
+@import "components/page/_page";
+@import "components/sidebar/_sidebar";
+@import "components/typography/_typography";
 
 *,
 *:after,
@@ -34,6 +42,7 @@ li {}
 a {
   color  : rgb(52, 58, 64);
   padding: 8px;
+  @include transition (.2s, ease-in-out);
 
   &:hover {
     color          : rgb(0, 123, 255);

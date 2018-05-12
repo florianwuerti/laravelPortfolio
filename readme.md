@@ -9,5 +9,6 @@
 
 ## Authors
 -   **Florian Würtenberger** - Web Developer -
-- Website: [Github Würtenberger Design](https://github.com/wuertenberger-design) | [Portfolio](https://florian.wuertenberger.ch)
+- Github: [Würtenberger Design](https://github.com/wuertenberger-design)
+- Website: [Portfolio](https://florian.wuertenberger.ch)
 - Twitter: [flowuerti](https://twitter.com/flowuerti)

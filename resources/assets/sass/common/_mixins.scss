@@ -1,0 +1,14 @@
+
+// Transition
+@mixin transition($transition-time, $method) {
+  transition: $transition-time, $method;
+}
+// Flexbox
+@mixin flexbox {
+  display: flex;
+}
+
+// Flexbox Direction
+@mixin flex-direction($value: row) {
+  flex-direction: $value;
+}

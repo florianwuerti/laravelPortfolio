@@ -15,6 +15,8 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about-us', 'PagesController@getAbout')->name('about us');
 Route::get('/project', 'PagesController@getProject')->name('project');
+Route::get('/project/single', 'PagesController@getProjectSingle')->name('project single');
+
 Route::get('/contact', 'PagesController@getContact')->name('contact');
 Route::get('/blog', 'PagesController@getBlog')->name('blog');
 Route::get('/login', 'Auth\LoginController@login');

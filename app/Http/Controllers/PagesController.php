@@ -16,6 +16,11 @@ class PagesController extends Controller
         return view('pages.project');
     }
 
+    public function getProjectSingle()
+    {
+        return view('projects.single');
+    }
+
     public function getAbout()
     {
         return view('pages.about');

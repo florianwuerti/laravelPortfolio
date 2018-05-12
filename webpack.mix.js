@@ -16,6 +16,7 @@ mix
   .sass('resources/assets/sass/app.scss', 'public/css')
   .browserSync({
     proxy: process.env.APP_URL,
+    browser: "google chrome",
     files: [
       'app/**/*.php',
       'resources/views/**/*.php',
