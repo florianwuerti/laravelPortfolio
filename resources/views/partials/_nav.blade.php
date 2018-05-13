@@ -6,7 +6,7 @@
     </a>
     <nav class="nav navbar__primary">
       <ul class="nav__list">
-        <li class="nav__item {{ Request::is('project') ? "nav__link-active" : "" }}">
+        <li class="nav__item {{ Request::is('project','project/*') ? "nav__link-active" : "" }}">
           <a class="nav__link" href="{{ url('project') }}">Project</a>
         </li>
         <li class="nav__item {{ Request::is('about-us') ? "nav__link-active" : "" }}">
@@ -17,8 +17,8 @@
         </li>
         @if (Route::has('login'))
           @auth
-            <li class="nav__item {{ Request::is('dashboard') ? "nav__link-active" : "" }}">
-              <a class="nav__link" href="{{ url('dashboard') }}">Dashboard</a>
+            <li class="nav__item {{ Request::is('admin/dashboard') ? "nav__link-active" : "" }}">
+              <a class="nav__link" href="{{ url('admin/dashboard') }}">Dashboard</a>
             </li>
           @endauth
         @endif

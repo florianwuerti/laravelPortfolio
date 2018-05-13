@@ -133,7 +133,7 @@ header {
   border-bottom  : 2px solid #f6f6f6;
   background     : rgb(255,255,255);
   padding        : 15px 0;
-  transition     : padding .3s;
+
 }
 
 .header__container {
@@ -145,6 +145,7 @@ header {
 }
 
 .header__brand {
+  padding       : 0;
   display       : flex;
   flex-direction: column;
   font-size     : 1.6875rem;

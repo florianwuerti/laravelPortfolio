@@ -4,9 +4,12 @@
     @include('partials._head')
   </head>
   <body>
-    @include('partials._nav')
+    @if (Request::is('admin/*'))
+      @include('partials.admin._nav')
+    @else
+      @include('partials._nav')
+    @endif
       @yield('content')
     @include('partials._footer')
-
   </body>
 </html>

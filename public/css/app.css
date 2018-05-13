@@ -10897,8 +10897,6 @@ header {
   border-bottom: 2px solid #f6f6f6;
   background: white;
   padding: 15px 0;
-  -webkit-transition: padding .3s;
-  transition: padding .3s;
 }
 
 .header__container {
@@ -10920,6 +10918,7 @@ header {
 }
 
 .header__brand {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
