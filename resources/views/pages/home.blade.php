@@ -12,10 +12,10 @@
     </head>
     <body class="start">
       <div class="start__box">
-  	    <h1 class="start__box-headline">Ich bin Web Entwickler</h1>
-        <p class="start__box-subheadline">Hier findest du Arbeiten meiner Tätigkeit als Web Entwickeler, sowie meine persönlichen Arbeiten.</p>
+  	    <h1 class="start__box-headline">I'm a web application developer</h1>
+        <p class="start__box-subheadline">Here you find work of my activity as a web developer</p>
         <div class="start__box-btn">
-          <a href="/project" class="start__box-btn--transparent" title="Willkommen in meinem Portfolio">Viel Spass beim durchstöbern</a>
+          <a href="/project" class="start__box-btn--transparent" title="Welcome to my portfolio">Have fun browsing</a>
         </div>
       </div>
     </body>

@@ -81,6 +81,10 @@
   margin-top: 40px;
 }
 
+.projectSingle {
+  margin-bottom: 80px;
+}
+
 .projectSingle__images {
   margin-bottom: 20px;
 
@@ -154,6 +158,105 @@
 
 @media (min-width: 991px) {
   .timeline__container {
+    width: 50%;
+  }
+}
+
+.contact__container {
+  margin-top    : 40px;
+  width         : 100%;
+  display       : flex;
+  flex-direction: column;
+
+  h1 {
+    align-self: center;
+  }
+}
+
+.contact {
+  margin-bottom: 80px;
+}
+
+.contact__form {
+  z-index       : 2;
+  display       : flex;
+  flex-direction: column;
+  padding       : 15px;
+  margin        : 0 0 40px;
+}
+
+/* Contact Page */
+input {
+  display      : block;
+  width        : 100%;
+  margin       : 12px 0;
+  padding      : 20px;
+  background   : #dbe1ed;
+  border       : 1px solid #dbe1ed;
+  font-size    : 15px;
+  color        : #3b5998;
+  line-height  : 1.55;
+  outline-color: transparent;
+  outline-style: none;
+  border-radius: 0;
+
+  &:focus,
+  &:hover {
+    border    : 1px solid #ccc;
+    background: #fff;
+  }
+}
+
+label {
+  margin     : 0;
+  font-weight: 400;
+}
+
+textarea {
+  width        : 100%;
+  margin       : 6px 0 0;
+  padding      : 20px;
+  border       : 1px solid #dbe1ed;
+  background   : #dbe1ed;
+  font-size    : 15px;
+  color        : #3b5998;
+  line-height  : 1.55;
+  outline-color: transparent;
+  outline-style: none;
+
+  &:focus,
+  &:hover {
+    border    : 1px solid #ccc;
+    background: #fff;
+  }
+}
+
+button#submit {
+  display        : flex;
+  justify-content: center;
+  width          : 100%;
+  background     : #3b5998;
+  color          : #fff;
+  margin         : 25px auto 0;
+  padding        : 15px;
+  border-radius  : 0;
+  font-size      : 16px;
+  cursor         : pointer;
+  transition     : color .3s ease, background-color .3s ease;
+
+  &:hover {
+    outline         : none;
+    background-color: #dc3545;
+    color           : #fff;
+  }
+}
+
+@media (min-width: 991px) {
+  .contact__container {
+    width: 50%;
+  }
+
+  button#submit {
     width: 50%;
   }
 }

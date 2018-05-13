@@ -5,13 +5,10 @@
 ## Built With
 
 -   [The Laravel PHP Framework](https://github.com/laravel) - The PHP Framework For Web Artisans
+-   [Bootstrap v.4 CSS Framework](https://getbootstrap.com/)
 
 ## Authors
-<<<<<<< HEAD
 -   **Florian Würtenberger** - Web Developer -
 - Github: [Würtenberger Design](https://github.com/wuertenberger-design)
 - Website: [Portfolio](https://florian.wuertenberger.ch)
 - Twitter: [flowuerti](https://twitter.com/flowuerti)
-=======
--   **Florian Würtenberger** - Web Developer - [Würtenberger Design](https://github.com/wuertenberger-design)
->>>>>>> parent of a67d491... 2. Push - styling frondend (start and Navigation)
