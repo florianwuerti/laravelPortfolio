@@ -2,14 +2,18 @@
 
 @section('content')
 
+  <div class="page">
+    <div class="page__banner">
+      <div class="page__banner-bg" style="background:linear-gradient(0deg, rgba(59,89,152,0.7), rgba(109, 132, 180,0.60)), url('https://placeimg.com/1500/575/tech') no-repeat center center;">
+        <div class="page__banner-subtitle">
+          <p>WordPress</p>
+        </div>
+        <h1 class="page__banner-title">Redesign Github</h1>
+      </div>
+    </div>
+  </div>
 <div class="projectSingle">
   <div class="projectSingle__content">
-    <div class="projectSingle__headline" style="background:linear-gradient(0deg, rgba(59,89,152,0.7), rgba(109, 132, 180,0.60)), url('https://placeimg.com/1500/575/tech') no-repeat center center;">
-      <div class="projectSingle__headline-category">
-        <p>WordPress</p>
-      </div>
-      <h1 class="projectSingle__headline-title">Redesign Github</h1>
-    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
