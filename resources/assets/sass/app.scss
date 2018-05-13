@@ -83,9 +83,10 @@ nav {}
     }
 
     .start__box-btn {
-      width      : 100%;
-      padding-top: 50px;
-      display    : flex;
+      width          : 100%;
+      justify-content: center;
+      padding-top    : 20px;
+      display        : flex;
 
       .start__box-btn--transparent {
 
